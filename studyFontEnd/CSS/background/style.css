@@ -1,0 +1,38 @@
+/* body{
+    background-color: #ff0000;
+    /*có 3 kiểu chọn màu: a valid : HEX: RGB*/
+    /* background-image: url('../HomeWork/logo.png'); */
+    /*gif, jpg,png, svg*/
+    /* background-repeat: no-repeat; */
+    /* background-position: right top; */
+/* } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+.container{
+    background-color: wheat;
+}
+.p1{
+    background-color: violet;
+    background-image: url('../HomeWork/logo.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.p2{
+    background-color: yellow;
+    height: 200vh;
+    background-image: url('./unnamed.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+    background: url('../HomeWork/logo.png') no-repeat right top;
+}

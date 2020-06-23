@@ -1,0 +1,8 @@
+li{
+    display: inline-block;
+    border: 1px solid black;
+}
+.demo{
+    /* display: none; */
+    visibility: hidden;
+}

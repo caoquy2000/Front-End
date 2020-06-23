@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    width: 100%;
+    position: relative;
+    margin: 1rem 0; 
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.button{
+    border: 1px solid black;
+    padding: 2rem 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.button::before{
+    content: " ";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    /* padding: 2rem 5rem; */
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: 0;
+    bottom: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    
+}
+.button:hover::before{
+    content: "Start";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 2rem 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/*.button:hover:after{
+    content: "Start";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 2rem 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 100%;
+    bottom: 0;    
+    transition: 300ms;
+    z-index: 100;
+    
+}
+*/
+/*.button::after{
+    content: " ";
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 2rem 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: 0;
+    bottom: 100%;
+    transition: 300ms;
+}
+*/

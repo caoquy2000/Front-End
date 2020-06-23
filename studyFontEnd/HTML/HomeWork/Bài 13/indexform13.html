@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 13</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #5B81D7;
+        }
+        table{
+            border: 1px solid rgb(48, 159, 179);
+            border-collapse: collapse;
+            background-color: #E2F3A0;
+            color: #9AB1D5;
+            margin: auto 30%;
+            width: 600px;
+
+        }
+        table tr td {
+            border: 1px solid rgb(93, 122, 128);
+        }
+        .kiki{
+            color: chocolate;
+        }
+        .lala{
+            color: coral;
+        }
+        .label-demo6{
+            color: #9AB1D5;
+
+        }
+        .label-demo7{
+            color: #9AB1D5;
+        }
+        .opop{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đăng ký du lịch</h1>
+    <div>
+        <table>
+            <tr>
+                <td><label class="label-demo" for="name">Họ và tên</label></td>
+                <td><input style="width: 350px;" class="input-text" type="text" id="name" placeholder="Nhập tên đi bạn..."></td>
+              
+            </tr>
+            <tr>
+                <td><label class="label-demo1" for="address">Địa chỉ</label></td>
+                <td><input style="width: 300px;" class="input-text1" type="text" id="address" placeholder="Nhập địa chỉ đi bạn..."></td>
+                
+            </tr>
+            <tr>
+                <td><label class="label-demo2" for="phone">Điện thoại</label></td>
+                <td><input style="width: 250px;" class="input-text2" type="text" id="phone" placeholder="Nhập phone đi bạn..."></td>
+                
+            </tr>
+            <tr>
+                <td><label class="label-demo3" for="customer">Khách Việt Nam </label></td>
+                <td><input type="checkbox" checked></td>
+                
+            </tr>
+            <tr>
+                <td><label class="label-demo4" for="tour">Chọn tour</label></td>
+                <td><select name="tour" id="tour">
+                        <optgroup label ="Miền Bắc" style="font-style: italic;">
+                            <option value="1" style="font-style: normal;">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="2" style="font-style: normal;">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="3" style="font-style: normal;">Hà Nội - Cát Bà - Tuấn Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                        <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                        <option value="5">Nha Trang - Đà Lạt</option>
+                        <option value="6">Buôn mê thuộc - Gia lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                        <option value="7">TP.HCM - Cần Thơ - Cà Mau</option>
+                        <option value="8">TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select></td>
+                
+            </tr>
+            <tr>
+                <td><Label class="label-demo5" for="kkk">Phương tiện</Label></td>
+                <td>
+                    <input type="radio" name="plane" id="akali">
+                    <label for="plane">Máy bay</label>
+                    <input type="radio" name="plane" id="yasssu">
+                    <label for="plane">Xe ô tô</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="3">
+                    <fieldset class="lala" style="width: 300px; margin: 20px; padding-left: 30px; margin-left: 20%; border: 1px solid coral;">
+                        <legend class="kiki"><i>Số lượng đoàn Khách</i></legend>
+                        <label class="label-demo6" for="adult">Người lớn</label>
+                        <input style="width: 80px" class="input-text3" type="text" id="adult">
+                        <label class="label-demo7" for="children">Trẻ em</label>
+                        <input style="width: 80px" class="input-text4" type="text" id="children">
+                    </fieldset>
+                </td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td><label class="label-demo8" for="note">Ghi chú thêm</label></td>
+                <td>
+                    <select style="width: 300px;" name="pro" id="pro" size="2">
+                        <option value="tt">Có 2 trẻ em dưới 6 tuổi</option>
+                        <option value="tz">Có 2 người ăn chay</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="opop" colspan="2"><input type="submit" name="submit" id="submit" value="Đồng Ý"></td>
+                <!-- <td></td> -->
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

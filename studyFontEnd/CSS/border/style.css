@@ -1,0 +1,18 @@
+.p1{
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0,100%,50%);
+    /*valid , hex, rgb, hsl*/
+    /*border sides style*/
+    /* border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: dotted;
+    border-right-style: dotted; */
+    border-style: dotted solid dashed groove ;
+    border: 1px solid black;
+    /* khi choi shorthand mà dùng style thì sẽ bị mất màu  */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+
+}

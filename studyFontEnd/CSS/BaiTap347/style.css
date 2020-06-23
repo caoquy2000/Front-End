@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'roboto',sans-serif;
+    background-color: #A06D21;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*======================================================*/
+.header{
+    text-align: center;
+    color: #ffcc00;
+    padding-top: 2.5rem;
+}
+/*======================================================*/
+.content__img{
+    width: 50rem;
+    height: 34rem;
+    position: absolute;
+    /* absolute nhan65 cha la relative va ca fixed */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* so với chính no */
+    z-index: -1;
+}
+.content__text{
+    padding-top: 5rem;
+}

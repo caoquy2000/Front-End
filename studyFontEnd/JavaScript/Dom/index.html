@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DOM - study what?</h1>
+    <ul>
+      <li>Change the content of html</li>
+      <li>Change style of the element</li>
+      <li>React to events</li>
+      <li>Add and delete html element</li>
+    </ul>
+    <br />
+    <br />
+    <h2>DOM tree</h2>
+    <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="" />
+    <br />
+    <img src="https://www.w3schools.com/js/pic_navigate.gif" alt="" />
+    <br />
+    <br />
+    <h2>Change the content of html</h2>
+    <p>
+      In the DOM, all HTML elements are defined as objects. <br />
+      A property is a value that you can get or set (like changing the content
+      of an HTML element). <br />
+      A method is an action you can do (like add or deleting an HTML element).
+      <br />
+    </p>
+    <br />
+    <br />
+    <h3>Finding elements</h3>
+    <p>
+      document.getElementById("id"); /document.getElementsByTagName(name); /
+      document.getElementsByClassName(name)
+    </p>
+    <br />
+    <br />
+    <h3>Change HTML element</h3>
+    <p>
+      element.innerHTML = new html content; <br />
+      element.attribute = new value; <br />
+      element.style.property = new style <br />
+      element.setAttribute(attribute, value); <br />
+    </p>
+    <br />
+    <br />
+    <h3>Some important functions</h3>
+    <p>setInterval(); setTimeOut();</p>
+    <div class="dom-props">
+      <div class="dom-props__element">
+        <h1>Documnent</h1>
+        <h2>Properties</h2>
+        <ul>
+          <li>anchors: Trả về tất cả thẻ a</li>
+          <li yes>body: Trả về thẻ body</li>
+          <li>cookie: Trả về cookie</li>
+          <li>defaultView: Trả về object window chứa trang</li>
+          <li>documentElement: Trả về html object</li>
+          <li>readyState: Trả về true/false, trang đã tải xong hay chưa</li>
+          <li yes>title: Trả về title của trang</li>
+        </ul>
+        <h2>Method</h2>
+        <ul>
+          <li>addEventListener("event", function)</li>
+          <li>createElement("tag-name")</li>
+          <li>getElementBy....</li>
+          <li>querySelector("select"): Trả về phần tử đầu tiên match</li>
+          <li>querySelectorAll("selector")</li>
+          <li>removeEventListener("even", function)</li>
+        </ul>
+      </div>
+      <div class="dom-props__element">
+        <h1>Element</h1>
+        <h2>Properties</h2>
+        <ul>
+          <li>attributes: Trả về attribute của el đó</li>
+          <li>
+            children: Trả về collections children của el đó (ko bao gồm cả text
+            và comment)
+          </li>
+          <li>classList: trả về các class của el</li>
+          <li yes>className: giá trị class của el đó</li>
+          <li>
+            clientHeight/ clientWidth: Trả về chiều cao/ chiều rộng của el (bao
+            gồm padding)
+          </li>
+          <li>clientLeft/ clientTop: Trả về độ dày border top/left của el</li>
+          <li>firstChildElement/lastChildElement: Trả về el con đầu/cuối</li>
+          <li yes>innerHTML: Nội dung của el</li>
+          <li>
+            previousElementSibling/nextElementSibling: el kế cận phía trước/sau
+          </li>
+          <li yes>
+            nodeValue: value của một node
+            <strong><a href="node-is-what">Tìm hiểu node là gì!</a></strong>
+          </li>
+          <li>
+            offsetHeight/offsetWidth: chiều cao/rộng của el, tính cả border,
+            padding và scrollbar
+          </li>
+          <li>
+            offsetTop/ offsetLeft: vị trí của el so với thằng cha có position
+            khác static (tính vị trí, margin của nó + padding, border, margin,
+            scrollbar của thằng cha)
+          </li>
+          <li>offsetParent: trả ra thằng cha đó</li>
+          <li>parentElement: trả về thằng cha của el</li>
+          <li>
+            scollHeight/scrollWidth: Trả về chiều cao/rộng, có thêm padding,
+            điểm khác với clientHeight/clientWidth đó là phần nào dù bị ẩn đi do
+            overflow(tràn) thì vẫn được tính
+          </li>
+          <li yes>
+            scrollTop/scrollLeft: Giá trị mà thanh scroll đã cuộn theo chiều
+            dọc/ngang trong el mà có chứa scrollbar
+          </li>
+          <li yes>tabIndex: để xem khi tab thì thứ tự nó là như nào</li>
+        </ul>
+        <h2>Method</h2>
+        <ul>
+          <li>addEventListener/removeEventListener</li>
+          <li>appendChild(node): thêm phần tử con vào cuối</li>
+          <li>focus() => làm cho phần tử đó đc focus, blur() thì ngược lại</li>
+          <li>click() => ...</li>
+          <li>
+            cloneNode(boolean => có cần clone luôn cả những thằng bên trong hay
+            ko?) => tự clone chính nó, sau đó trả về node mới
+          </li>
+          <li>contains(node) => có chứa node đó hay ko? => true/false</li>
+          <li>
+            getBoundingClientRect() => trả về top/right/bottom/left của node đó
+            so với viewport và width, height của chính nó
+          </li>
+          <li>getAttribute(attr) => trả về giá trị của attr node đó</li>
+          <li>
+            insertAdjacentElement("position", node) => insert node bất kỳ vào vị
+            trí postion so với nó, bao gồm: "afterbegin" => node trở thành
+            firstchild của nó, "afterend" => node nằm sau nó, ngang hàng,
+            "beforebegin" => node nằm trước nó, ngang hàng, "beforeend" => node
+            trở thành lastchild
+          </li>
+          <li>
+            insertAdjacentHTML(), tương tự trên, nhưng thay vì node thì là đoạn
+            text định dạng html
+          </li>
+          <li>insertAdjacentText(), tương tự trên với text</li>
+          <li>removeChild(node) => remove node con</li>
+          <li>removeAttribute("attr-name") => xóa attr đó khỏi node</li>
+          <li>setAttribute("attr", "value")</li>
+        </ul>
+      </div>
+    </div>
+    <div class="dom-props">
+      <div class="dom-props__element">
+        <h1>Collections là gì? NodeList là gì?</h1>
+        <ul>
+          <li>getElementsByTagName() sẽ trả ra collections</li>
+          <li>
+            A NodeList object is a list (collection) of nodes extracted from a
+            document. <strong>childNodes, querySelectorAll</strong>
+          </li>
+          <li>
+            HTMLCollection items can be accessed by their name, id, or index
+            number. NodeList items can only be accessed by their index number.
+            Only the NodeList object can contain attribute nodes and text nodes.
+          </li>
+          <li>
+            you cannot use array methods like valueOf(), pop(), push(), or
+            join() on an HTMLCollection and NodeList
+          </li>
+        </ul>
+      </div>
+      <div class="dom-props__element">
+        <h1>Các loại node</h1>
+        <ul>
+          <li>element node</li>
+          <li>attribute node</li>
+          <li>text node</li>
+          <li>comment node</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    text-align: center;
+  }
+  ul {
+    list-style-position: inside;
+  }
+  body > ul {
+    list-style: none;
+  }
+  li {
+    margin: 10px 0;
+  }
+  .dom-props {
+    width: 50%;
+    margin: 100px auto;
+    font-size: 20px;
+    text-align: left;
+  }
+  .dom-props__element {
+    padding: 20px;
+    border: 1px dashed gray;
+    margin: 20px;
+  }
+  .dom-props__element h1,
+  .dom-props__element h2 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .dom-props__element h1 {
+    color: blue;
+  }
+  .dom-props__element h2 {
+    color: green;
+  }
+  .dom-props__element ul {
+    list-style: decimal inside;
+  }
+  
+  .dom-props__element li[yes] {
+    background: aqua;
+  }

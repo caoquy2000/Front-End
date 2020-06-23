@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: chocolate;
+        }
+
+        div {
+            margin: auto 30%;
+            padding-left: 100px;
+        }
+
+        table {
+            border: 1px solid brown;
+            border-collapse: collapse;
+            background-color: cyan;
+        }
+
+        table tr td {
+            border: 1px solid brown;
+        }
+
+        .td-end {
+            text-align: center;
+        }
+
+        #daika {}
+    </style>
+</head>
+
+<body>
+    <div id="daika">
+        <h1>Đăng nhập</h1>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label class="label-demo" for="name">Mã người dùng:</label>
+                    </td>
+                    <td>
+                        <input class="input-text" type="text" id="name" placeholder="Nhập ID đi bạn..">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="label-demo" for="pwd">Mật khẩu:</label>
+                    </td>
+                    <td>
+                        <input class="input-text" type="text" id="pwd" placeholder="Nhập Password đi bạn..">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="td-end">
+                        <input type="submit" value="Submit">
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

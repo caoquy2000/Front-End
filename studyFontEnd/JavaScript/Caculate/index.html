@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <pre>Bài 6:
+            Hiện thực một chương trình máy tính cơ bản sử dụng HTML Form và
+            ngôn ngữ Javascript, chương trình hỗ trợ các phép tính cơ bản (cộng, trừ,
+            nhân, chia, luỹ thừa), các giá trị được người dùng nhập vào thông qua
+            HMTL Form
+    </pre>
+    <br>
+    <form name="form-Calculate">
+        <input type="text" id="num1">
+        
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="**">^</option>
+        </select>
+        
+        <input type="text" id="num2">
+
+        <button type="button" id="summit">=</button>
+
+        <input type="text" id="result">
+    </form>
+    <script src="./caculateApp.js"></script>
+</body>
+
+</html>

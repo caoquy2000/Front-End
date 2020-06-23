@@ -1,0 +1,13 @@
+.tooltip{
+    position: relative;
+}
+.tooltip::after{
+    content:"Hoc fpt";
+    visibility: hidden;
+    position: absolute;
+    transition: 0.5s;
+}
+.tooltip:hover::after{
+    visibility: visible;
+    transition: 0.5s;
+}

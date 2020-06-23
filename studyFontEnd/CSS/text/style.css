@@ -1,0 +1,23 @@
+.p-tag{
+    /* color: violet; */
+    /* background-color: tomato; */
+    text-align: justify;
+    /* direction: rtl; */
+    /* unicode-bidi: bidi-override; */
+    /* text-decoration: underline; */
+    /* text-shadow: 3px 2px red; */
+    font-variant: small-caps;
+}
+.p-tag1{
+    text-align: justify;
+    /* text-indent: 50px; */
+    /* letter-spacing: -3px; */
+    /* line-height: 1.8; */
+    /* word-spacing: px; */
+}
+.icon__oto{
+    color: hotpink;
+    font-size: 100px;
+}
+/* rem => html */
+/* em => cha */

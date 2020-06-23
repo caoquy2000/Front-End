@@ -1,0 +1,32 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*(10px)*/
+/*} */
+/* 
+body{
+    font-family: sans-serif;
+    font-size: 1.6rem; 16px */
+    /*dựa trên html làm góc đơn vị: 1rem = 10px*/
+/* } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}

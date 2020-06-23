@@ -1,0 +1,17 @@
+/* height/width */
+/* auto */
+/* length px,cm*/
+/* % */
+/* initial */
+/* inherit */
+.div1{
+    height: 200px;
+    width: 50%;
+    background-color: lightblue;
+}
+.father{
+    width: 500px;
+    height: 200px;
+    background-color: lightcoral;
+    text-transform: capitalize;
+}

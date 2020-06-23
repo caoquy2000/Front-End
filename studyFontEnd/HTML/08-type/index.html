@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type</title>
+    <style>
+        .input-text {
+            outline: none;
+            padding: 5px 10px;
+            border: 1px solid olive;
+            background: transparent;
+        }
+
+        .label-demo {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <label class="label-demo" for="name">Ten Dang Nhap</label>
+        <input class="input-text" type="text" id="name"><br>
+        <label class="label-demo" for="pwd">password</label>
+        <input class="input-text" type="password" name="matkhau" id="pwd" placeholder="Nhap Mat Khau Di Ban"><br>
+        
+        <input type="radio" id="male" name="Gender" value="male" checked>
+        <label for="male">Male</label><br>
+                
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label><br>
+
+    <input type="submit" value="Submit"> -->
+        <label for="cars">Xe ma ban thich</label>
+        <select name="cars" id="cars" >
+            <option value="vietnam">VinFAST</option>
+            <option value="japan" selected>toyota</option>
+            <option value="france">audi</option>
+            <option value="vietnam">VinFAST</option>
+            <option value="japan" selected>toyota</option>
+            <option value="france">audi</option>
+            <option value="vietnam">VinFAST</option>
+            <option value="japan" selected>toyota</option>
+            <option value="france">audi</option>
+        </select>
+
+        <textarea name="sms" id="sms" style="max-width: 200px;min-width: 200px;height: 600px;"></textarea>
+    
+    </form>
+
+    <button type="button" onclick="alert('Hello ben ei;');">Click me !</button>
+        <form action="" method="get">
+            <fieldset>
+                <legend style="text-align: center;">Person</legend>
+                <p>who have name and yob</p>
+                <label class="label-demo" for="name">Ten Dang Nhap</label>
+                <input class="input-text" type="text" id="name"><br>
+                <label class="label-demo" for="pwd">password</label>
+                <input class="input-text" type="password" name="matkhau" id="pwd"
+                    placeholder="Nhap Mat Khau Di Ban"><br>
+
+                <input type="radio" id="male" name="Gender" value="male" checked>
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label><br>
+            </fieldset>
+
+            <form action="" method="get">
+                <input list="browsers" name="browers">
+                <datalist id="browsers">
+                    <option value="Phim xex"></option>
+                    <option value="youtube"></option>
+                    <option value="csgo"></option>
+                    <option value="hello"></option>
+                    <option value="mana"></option>
+                </datalist>
+            </form>
+
+
+            <form action="" method="get" oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100
+                <input type="number" id="b" name="b" value="50">
+                <output name="x" for="a b"></output>
+            </form>
+        </form>
+</body>
+
+</html>

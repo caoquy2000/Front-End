@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+.title-page{
+    color: blue !important;
+}
+.green{
+    color: aqua;
+}
+.box-model{
+    border: 1px solid red;
+    padding: 10px 20px;
+    margin: 10px 20px;
+
+}
+.border{
+    border-style: double;
+    outline-offset: 15px;
+}

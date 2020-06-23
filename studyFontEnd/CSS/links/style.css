@@ -1,0 +1,34 @@
+/* .nav__links{
+    color: hotpink;
+}
+.nav__links:link{
+    color: khaki;
+}
+.nav__links:visited{
+    color: red;
+}
+
+.nav__links:hover{
+    color: green;
+}
+.nav__links:active{
+    color: blue;
+} */
+
+.nav__links{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 1px solid green;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: green;
+    transition: 0.5s all;
+}
+.nav__links:hover{
+    color: white;
+    background-color: green;
+    text-decoration: solid;
+}
